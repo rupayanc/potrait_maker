@@ -1,0 +1,38 @@
+{
+  "10": {
+    "inputs": {
+      "model": "pgen",
+      "image": [
+        "11",
+        0
+      ]
+    },
+    "class_type": "PM_PortraitEnhancement",
+    "_meta": {
+      "title": "PortraitEnhancement PM"
+    }
+  },
+  "11": {
+    "inputs": {
+      "image": "example.png",
+      "upload": "image"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "12": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "10",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  }
+}
